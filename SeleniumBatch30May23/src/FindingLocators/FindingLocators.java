@@ -54,8 +54,12 @@ public class FindingLocators {
 			// 7.1) * xpath
 
 			driver.findElement(By.xpath("//*[@value= 'radio1']")).click();
-
-			Thread.sleep(2500);
+			driver.findElement(By.xpath("//select[@name='dropdown-class-example']")).click();
+			driver.findElement(By.xpath("//option[@value='option2']")).click();
+			
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//button[@class='btn-style class1']")).click();
+			 
 			
 			//7.2
 
